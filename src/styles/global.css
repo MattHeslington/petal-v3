@@ -1,0 +1,32 @@
+@tailwind base;
+
+body {
+    background: #040426;
+    color:aliceblue;
+    font-family: inter;
+}
+
+.gradienta{
+    background: linear-gradient(
+    to right,
+    hsl(341 88% 75%),
+    hsl(230 7% 84%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.ball{
+    background: rgb(12,12,111);
+    background: radial-gradient(ellipse, rgba(12,12,111,1) 15%, rgba(4,4,38,0) 50%);
+}
+
+.blur::before{
+    filter: blur(5px);
+    background-color: #000000;
+    opacity: 0.25;
+}
+
+@tailwind components;
+@tailwind utilities;
