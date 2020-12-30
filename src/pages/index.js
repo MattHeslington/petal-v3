@@ -1,6 +1,8 @@
 import * as React from "react"
 import Layout from 'src/components/Layout'
 import red from 'src/static/red.png'
+import blue from 'src/static/blue.png'
+import orange from 'src/static/orange.png'
 import tech from 'src/static/tech.png'
 import custom from 'src/static/custom.png'
 import fast from 'src/static/fast.png'

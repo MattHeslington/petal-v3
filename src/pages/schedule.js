@@ -65,16 +65,16 @@ const Schedule = () => {
                         <input onChange={(e) => setCompany(e.target.value)} value={company} name="company" className="w-full px-6 py-8 text-xl font-light text-gray-400 border border-gray-600 bg-darkBG focus:outline-none focus:border-white"  type="text" placeholder="company"/>
                     </div>
                 </div>
-                <div className="z-10 w-full mt-12">
-                    <input onChange={(e) => setEmail(e.target.value)} value={email} name="email" className="w-full px-6 py-8 text-xl font-light text-gray-400 border border-gray-600 bg-darkBG focus:outline-none focus:border-white"  type="text" placeholder="email"/>
+                <div className="flex w-full mt-12">
+                    <input onChange={(e) => setEmail(e.target.value)} value={email} name="email" className="z-10 w-full px-6 py-8 text-xl font-light text-gray-400 border border-gray-600 bg-darkBG focus:outline-none focus:border-white"  type="text" placeholder="email"/>
                 </div>
 
                 <div>
                     <h2 className="mt-12 font-bold tracking-widest uppercase">message</h2>
                 </div>
 
-                <div className="z-10 mt-8">
-                    <textarea onChange={(e) => setMessage(e.target.value)} value={message} name="message" className="w-full px-6 py-8 text-xl font-light text-gray-400 border border-gray-600 bg-darkBG focus:outline-none focus:border-white" rows="10">what is your project about and that?</textarea>
+                <div className="flex mt-8">
+                    <textarea onChange={(e) => setMessage(e.target.value)} value={message} name="message" className="z-10 w-full px-6 py-8 text-xl font-light text-gray-400 border border-gray-600 bg-darkBG focus:outline-none focus:border-white" rows="10">what is your project about and that?</textarea>
                 </div>
                 <div>
                     <button type="submit" className="px-5 py-3 text-sm font-light border border-white rounded-full bg-btnStandard">Send now</button>
