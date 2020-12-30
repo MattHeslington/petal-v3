@@ -39,7 +39,7 @@ const Schedule = () => {
     return (
         <Layout>
             <div className="flex justify-center mt-16">
-                <h1 className="z-10 my-40 font-bold text-8xl gradienta"><span>Schedule a call</span></h1>
+                <h2 className="z-10 my-40 font-bold text-8xl gradienta"><span>Schedule a call</span></h2>
             </div>
 
             <div className="flex flex-col md:flex-row">
