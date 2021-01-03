@@ -23,7 +23,7 @@ const Nav = () => {
             <div>
                 <ul className="items-center hidden space-x-12 md:flex md:flex-row">
                     <li className="text-sm font-light highlight navlink">
-                        <Link to="/work-with-petal" data-content="Working with Petal" className="highlight">Working with Petal</Link>
+                        <Link to="/working-with-petal" data-content="Working with Petal" className="highlight">Working with Petal</Link>
                     </li>
                     <li className="text-sm font-light">
                         <div className="navlink">

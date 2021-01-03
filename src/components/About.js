@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie';
-import animationData from 'src/components/AboutAnim.json'
+import animationData from 'src/components/animations/AboutAnim.json'
 
 const About = () => {
 
@@ -22,9 +22,9 @@ const About = () => {
             <div className="flex items-center justify-center w-1/2 h-screen px-12">
                 <div className="z-10 flex md:mb-24">
                     <Lottie options={defaultOptions}
-                    height={600}
-                    width={600}
-                />
+                        height={600}
+                        width={600}
+                    />
                 </div>
             </div>
         </div>

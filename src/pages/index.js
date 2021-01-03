@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import {Helmet} from "react-helmet";
 import Layout from 'src/components/Layout'
 import About from 'src/components/About'
+import FooterCTA from 'src/components/FooterCTA'
 
 import tech from 'src/static/tech.png'
 import custom from 'src/static/custom.png'
@@ -19,6 +20,7 @@ const IndexPage = () => {
     const defaultAward = {opacity:0, scale:0.8}
 
     return (
+        <>
         <Layout>
             <Helmet>
                 <title>P E T A L .</title>
@@ -82,7 +84,7 @@ const IndexPage = () => {
                     <img className="border border-gray-700 rounded-lg" src={cms} alt="custom-made content management systems"/>
                 </div>
             </div>
-            <div className="z-10 flex flex-col items-center p-12 rounded-lg md:flex-row">
+            <div className="z-10 flex flex-col items-center p-12 pb-64 rounded-lg md:flex-row">
                 <div className="md:w-1/2 md:mr-5">
                     <h3 className="text-4xl font-bold leading-10 tracking-tight text-white">Users can add to <span className="gradienta">their device homescreen</span></h3>
                     <p className="mt-4 text-lg font-light leading-loose">Our websites give users the option to add the website  icon to their home screen, making your website instantly available to the user and act and behave like an app.  According to studies, this can lead to a <a href="https://www.sam-solutions.com/blog/the-benefits-of-progressive-web-apps-pwa-for-business/"  target="_blank" className="underline">52% increase in conversions and a 134% increase in page views&nbsp;
@@ -93,7 +95,11 @@ const IndexPage = () => {
                 </div>
             </div>
 
+
+
         </Layout>
+        <FooterCTA/>
+        </>
     )
 }
 

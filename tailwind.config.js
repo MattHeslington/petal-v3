@@ -19,6 +19,7 @@ module.exports = {
             colors: {
                 "btnStandard":"#e51157",
                 "darkBG":"#0F141D",
+                "footerBG":"#ED217C",
             },
             fontFamily: {
                 'inter': ['inter', 'sans-serif'],
