@@ -17,15 +17,40 @@ body {
   text-align: center;
 }
 
-.ball{
-    background: rgb(12,12,111);
-    background: radial-gradient(ellipse, rgba(12,12,111,1) 15%, rgba(4,4,38,0) 50%);
+.highlight {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-transition: -webkit-clip-path 275ms ease;
+    transition: -webkit-clip-path 275ms ease;
+    transition: clip-path 275ms ease;
+    transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
 }
 
-.blur::before{
-    filter: blur(5px);
-    background-color: #000000;
-    opacity: 0.25;
+.highlight::before {
+    color: #E41357;
+}
+
+.navlink:hover .highlight::before {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.highlight::before {
+    position: absolute;
+    content: attr(data-content);
+
+    -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    -webkit-transition: -webkit-clip-path 275ms ease;
+    transition: -webkit-clip-path 275ms ease;
+    transition: clip-path 275ms ease;
+    transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+
+.bg{
+    background: radial-gradient(65% 100% at 50% 0%, #18005B 0%, #000000 100%), radial-gradient(circle at 30% 45%, #FF0000 0%, #FF0000 5%, #FFFF00 5%, #FFFF00 10%, #00FF00 10%, #00FF00 15%, #00FFFF 15%, #00FFFF 20%, #0000FF 20%, #0000FF 30%, #FF00FF 30%, #FF00FF 40%, #FF0000 40%), radial-gradient(circle at 50% 0%, #FF0000 0%, #FF0000 5%, #FFFF00 5%, #FFFF00 10%, #00FF00 10%, #00FF00 20%, #00FFFF 20%, #00FFFF 30%, #0000FF 30%, #0000FF 40%, #FF00FF 40%, #FF00FF 50%, #FF0000 50%), conic-gradient(from 15deg at 20% 420%, #FF0000 0deg, #FF0000 55deg, #FFFF00 60deg, #FFFF00 120deg, #00FF00 120deg, #00FF00 180deg, #00FFFF 180deg, #00FFFF 240deg, #0000FF 240deg, #0000FF 300deg, #FF00FF 310deg, #FF00FF 360deg, #FF0000 360deg);
+    background-blend-mode: screen, multiply, multiply, normal;
 }
 
 @tailwind components;

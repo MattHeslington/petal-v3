@@ -76,7 +76,7 @@ const Schedule = () => {
                 <div className="flex mt-8">
                     <textarea onChange={(e) => setMessage(e.target.value)} value={message} name="message" className="z-10 w-full px-6 py-8 text-xl font-light text-gray-400 border border-gray-600 bg-darkBG focus:outline-none focus:border-white" rows="10">what is your project about and that?</textarea>
                 </div>
-                <div>
+                <div className="flex justify-center w-full mt-8">
                     <button type="submit" className="px-5 py-3 text-sm font-light border border-white rounded-full bg-btnStandard">Send now</button>
                 </div>
             </form>
