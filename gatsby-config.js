@@ -1,6 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: "P E T A L .",
+        siteUrl: "localhost:3000",
     },
     plugins: [
         "gatsby-plugin-root-import",
