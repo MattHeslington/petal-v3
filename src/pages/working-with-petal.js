@@ -1,6 +1,9 @@
 import React from 'react'
 import {Helmet} from "react-helmet";
+import { useInView } from "react-intersection-observer"; // 1.9K gzipped
+import { motion } from "framer-motion";
 import Layout from 'src/components/Layout'
+import FooterCTA from 'src/components/FooterCTA'
 
 import Lottie from 'react-lottie';
 import Listen from 'src/components/animations/Listen.json'
@@ -66,8 +69,13 @@ const WorkingWithPetal = () => {
         }
     };
 
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        rootMargin: '-100px 0px',
+    });
 
     return (
+        <>
         <Layout>
             <Helmet>
                 <title>Working with Petal</title>
@@ -77,11 +85,14 @@ const WorkingWithPetal = () => {
                 <h2 className="z-10 my-40 font-bold text-8xl gradienta"><span>Working with Petal</span></h2>
             </div>
 
-            <div>
+            <div className="pb-32">
 
-                <div className="flex w-full h-64 md:flex-row">
-                    <div className="w-5/12 mr-10">
-                        <h3 className="text-4xl font-bold tracking-tight text-right leading-0">We listen.</h3>
+                <div className="flex items-center w-full md:flex-row">
+                    <div className="flex items-center justify-end w-5/12 mr-10">
+                        <h3 className="text-4xl font-bold tracking-tight text-right leading-0 gradienta">
+                            <div className="inline-block">
+                                <div className="flex items-center justify-center w-12 h-12 mr-4 border-4 rounded-full">1</div>
+                            </div><span className="gradienta"></span>We listen.</h3>
                     </div>
                     <div className="flex justify-center w-2/12 line">
                         <div className="z-20 flex">
@@ -96,7 +107,9 @@ const WorkingWithPetal = () => {
                     </div>
                 </div>
 
-                <div className="flex w-full h-64 md:flex-row">
+                <div className="w-full h-32 line">&nbsp;</div>
+
+                <div className="flex items-center w-full md:flex-row">
                     <div className="w-5/12 mr-10">
                         <p>We believe in transparency and will provide you with an itemised quote, showing every aspect of the build of your website, where you can pick and choose the which features you would like included with your new site, and maybe suggest some new ones.</p>
                     </div>
@@ -109,14 +122,22 @@ const WorkingWithPetal = () => {
                         </div>
                     </div>
                     <div className="w-5/12 ml-10">
-                        <h3 className="text-4xl font-bold tracking-tight text-left leading-0">We'll provide an itemised breakdown.</h3>
+                        <h3 className="text-4xl font-bold tracking-tight text-left leading-0 gradienta">
+                            <div className="inline-block">
+                                <div className="flex items-center justify-center w-12 h-12 mr-4 border-4 rounded-full">2</div>
+                            </div>We'll provide an itemised breakdown.</h3>
                     </div>
                 </div>
 
-                <div className="flex w-full h-64 md:flex-row">
-                    <div className="w-5/12 mr-10">
-                        <h3 className="text-4xl font-bold tracking-tight text-right leading-0">We design your site.</h3>
-                    </div>
+                <div className="w-full h-32 line">&nbsp;</div>
+
+                <div className="flex items-center w-full md:flex-row">
+                    <motion.div ref={ref} style={{ opacity: inView ? 1 : 0 }} className="w-5/12 mr-10">
+                        <h3 className="text-4xl font-bold tracking-tight text-right leading-0 gradienta">
+                            <div className="inline-block">
+                                <div className="flex items-center justify-center w-12 h-12 mr-4 border-4 rounded-full">3</div>
+                            </div>We design your site.</h3>
+                    </motion.div>
                     <div className="flex justify-center w-2/12 line">
                         <div className="z-20 flex">
                             <Lottie options={designOptions}
@@ -130,7 +151,9 @@ const WorkingWithPetal = () => {
                     </div>
                 </div>
 
-                <div className="flex w-full h-64 md:flex-row">
+                <div className="w-full h-32 line">&nbsp;</div>
+
+                <div className="flex items-center w-full md:flex-row">
                     <div className="w-5/12 mr-10">
                         <p>Once you’ve decided on your perfect design, we’ll then provide interactive mockups which show your design come-to-life and as it would be used and interacted with in real-life. You’ll be able to view animations, click through to all your pages, and interact with your site as if it was almost real.</p>
                     </div>
@@ -143,13 +166,21 @@ const WorkingWithPetal = () => {
                         </div>
                     </div>
                     <div className="w-5/12 ml-10">
-                        <h3 className="text-4xl font-bold tracking-tight text-left leading-0">Play with our interactive mockups.</h3>
+                        <h3 className="text-4xl font-bold tracking-tight text-left leading-0 gradienta">
+                            <div className="inline-block">
+                                <div className="flex items-center justify-center w-12 h-12 mr-4 border-4 rounded-full">4</div>
+                            </div>Play with our interactive mockups.</h3>
                     </div>
                 </div>
 
-                <div className="flex w-full h-64 md:flex-row">
+                <div className="w-full h-32 line">&nbsp;</div>
+
+                <div className="flex items-center w-full md:flex-row">
                     <div className="w-5/12 mr-10">
-                        <h3 className="text-4xl font-bold tracking-tight text-right leading-0">We build your site.</h3>
+                        <h3 className="text-4xl font-bold tracking-tight text-right leading-0 gradienta">
+                            <div className="inline-block">
+                                <div className="flex items-center justify-center w-12 h-12 mr-4 border-4 rounded-full">5</div>
+                            </div>We build your site.</h3>
                     </div>
                     <div className="flex justify-center w-2/12 line">
                         <div className="z-20 flex">
@@ -164,7 +195,9 @@ const WorkingWithPetal = () => {
                     </div>
                 </div>
 
-                <div className="flex w-full h-64 md:flex-row">
+                <div className="w-full h-32 line">&nbsp;</div>
+
+                <div className="flex items-center w-full md:flex-row">
                     <div className="w-5/12 mr-10">
                         <p>There’s no real substitute for getting the feel for how your website looks and feels in real-life.  While we know you'll love your new site, there's no substitute for user-testing in the wild and we'll make and necessary changes based on user-feedback.</p>
                     </div>
@@ -177,7 +210,10 @@ const WorkingWithPetal = () => {
                         </div>
                     </div>
                     <div className="w-5/12 ml-10">
-                        <h3 className="text-4xl font-bold tracking-tight text-left leading-0">Launch time.</h3>
+                        <h3 className="text-4xl font-bold tracking-tight text-left leading-0 gradienta">
+                            <div className="inline-block">
+                                <div className="flex items-center justify-center w-12 h-12 mr-4 border-4 rounded-full">6</div>
+                            </div>Launch time.</h3>
                     </div>
                 </div>
 
@@ -185,6 +221,8 @@ const WorkingWithPetal = () => {
 
 
         </Layout>
+        <FooterCTA/>
+        </>
     )
 }
 
