@@ -13,11 +13,11 @@ const FooterCTA = () => {
             <h2 className="mb-12 text-5xl font-black leading-tight tracking-tight text-center text-white xl:text-10xl lg:text-8xl md:text-7xl sm:text-6xl">
                 <span className="gradienta">Ready to</span>
                 <br/>
-                <span className="gradienta">create your</span>
+                <span className="gradienta">chat about a</span>
                 <br/>
                 new website?
             </h2>
-            <Link to="/schedule"><button className="px-5 py-3 text-4xl font-bold tracking-tight text-white border border-white rounded-full bg-darkBG">Let's go</button></Link>
+            <Link to="/schedule"><button className="px-5 py-3 text-4xl font-bold tracking-tight text-white border border-white rounded-full bg-ourBlue">Contact us</button></Link>
         </div>
 
     )
