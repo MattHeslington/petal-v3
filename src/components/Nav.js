@@ -21,7 +21,7 @@ const Nav = () => {
                 </Link>
             </div>
             <div>
-                <ul className="items-center hidden space-x-12 md:flex md:flex-row">
+                <ul className="flex flex-row items-center space-x-4 sm:space-x-12">
                     <li className="text-sm font-light highlight navlink">
                         <Link to="/working-with-petal" data-content="Working with Petal" className="highlight">Working with Petal</Link>
                     </li>
@@ -43,9 +43,6 @@ const Nav = () => {
                         </Link>
                     </li>
                 </ul>
-                <div className="md:hidden">
-                    <HamburgerArrow barColor="white" {...{ isOpen, toggle }} />
-                </div>
             </div>
         </div>
     )
