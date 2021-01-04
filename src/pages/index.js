@@ -24,6 +24,7 @@ const IndexPage = () => {
         <Layout>
             <Helmet>
                 <title>P E T A L .</title>
+                <meta name="description" content="Petal is a small boutique design studio dedicated to achieving outstanding results using the latest web technologies." />
             </Helmet>
             <div className="flex flex-col items-center justify-center w-full h-screen mt-20">
                 <motion.div initial={defaultHero} animate={{scale: 1}} transition={{ duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] }}>
@@ -60,7 +61,7 @@ const IndexPage = () => {
             <div className="z-10 flex flex-col items-center p-12 rounded-lg md:flex-row">
                 <div className="md:w-1/2 md:mr-5">
                     <h3 className="text-4xl font-bold leading-10 tracking-tight text-center text-white md:text-left"><span className="gradienta">Score perfectly</span> in all of Google's five main metrics</h3>
-                    <p className="mt-4 text-lg font-light leading-loose text-center md:text-left">We ensure the websites we make score as high as possible in Google’s five key metrics, shown here.  If you already have a site, we guarantee we’ll beat the score you currently have. You can measure your current site <a href="https://web.dev/measure/"  target="_blank" rel="noreferrer" className="underline">here<svg className="inline-block w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>.</p>
+                    <p className="mt-4 text-lg font-light leading-loose text-center md:text-left">We ensure the websites we make score as high as possible in Google’s five key metrics, shown here.  If you already have a site, we guarantee we’ll beat the score you currently have. You can <a href="https://web.dev/measure/"  target="_blank" rel="noreferrer" className="underline">measure your current site here<svg className="inline-block w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>.</p>
                 </div>
                 <div className="md:w-1/2 md:ml-5">
                     <img className="mt-4 border border-gray-700 rounded-lg md:mt-0" src={lighthouse} alt="perfect google lighthouse scores"/>
