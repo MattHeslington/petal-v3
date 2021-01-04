@@ -20,7 +20,7 @@ const WorkWith = () => {
             <div className="flex flex-col items-center justify-center">
 
                 <div className="flex justify-center mt-16">
-                    <h2 className="z-10 my-40 font-bold text-8xl gradienta"><span>Work with Petal</span></h2>
+                    <h2 className="z-10 my-40 font-sans font-bold text-8xl gradienta"><span>Work with Petal</span></h2>
                 </div>
 
                 <VerticalTimeline className={'border border-2 rounded-lg bg-darkBG'}>
