@@ -28,7 +28,7 @@ const IndexPage = () => {
             </Helmet>
             <div className="flex flex-col items-center justify-center w-full h-screen mt-20">
                 <motion.div initial={defaultHero} animate={{scale: 1}} transition={{ duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] }}>
-                    <h2 className="mt-24 mb-12 font-sans text-5xl font-black leading-tight tracking-tight text-center text-white sm:mt-0 xl:text-10xl lg:text-8xl md:text-7xl sm:text-6xl">
+                    <h2 className="mt-32 mb-6 font-sans text-4xl font-black leading-tight tracking-tight text-center text-white xl:-mt-24 lg:-mt-20 md:-mt-16 sm:mt-0 xl:text-10xl lg:text-8xl md:text-7xl sm:text-6xl">
                         <span className="gradienta">Cost-effective</span>
                         <br/>
                         web development
@@ -36,7 +36,7 @@ const IndexPage = () => {
                         <span className="gradienta">you'll adore</span>
                     </h2>
                 </motion.div>
-                <div className="flex flex-col items-center justify-around w-full mt-24 mb-16 space-x-2 space-y-8 sm:flex sm:flex-row xl:mt-0 lg:mt-12 md:mt-16 sm:mt-20 sm:space-y-0">
+                <div className="flex flex-col items-center justify-around w-full mt-8 mb-16 space-x-2 space-y-8 sm:flex sm:flex-row xl:mt-0 lg:mt-12 md:mt-16 sm:mt-20 sm:space-y-0">
                     <motion.div initial={defaultAward} animate={{scale: 1, opacity:1}} transition={{ delay:0.7, duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] }} className="flex flex-col items-center w-48 space-y-5">
                         <img className="w-8 lg:w-20 md:w-16 sm:w-12" src={tech} alt="technology"/>
                         <p className="font-sans text-xs font-light text-center">All our sites are bespoke & custom-made to our clients exact requirements</p>
@@ -54,8 +54,8 @@ const IndexPage = () => {
 
             <About/>
 
-            <div className="mt-64 sm:my-24 sm:mt-0">
-                <h2 className="font-sans text-6xl font-black leading-tight tracking-tight text-center text-white"><span className="gradienta">We make websites</span> that:</h2>
+            <div className="mt-64 sm:my-24">
+                <h2 className="font-sans text-4xl font-black leading-tight tracking-tight text-center text-white xl:text-6xl"><span className="gradienta">We make websites</span> that:</h2>
             </div>
 
             <div className="z-10 flex flex-col items-center p-12 rounded-lg md:flex-row">

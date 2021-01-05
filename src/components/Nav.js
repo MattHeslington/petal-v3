@@ -6,7 +6,7 @@ import text from 'src/static/fast-site.png'
 const Nav = () => {
 
     return (
-        <div className="z-20 flex flex-row items-center justify-between h-24 -mb-24">
+        <div className="flex flex-row items-center justify-between h-24">
             <div>
                 <Link to="/">
                     <img className="h-4" src={logo} alt="P E T A L . logo"/>
@@ -15,7 +15,7 @@ const Nav = () => {
             <div>
                 <ul className="flex flex-row items-center space-x-4 sm:space-x-12">
 
-                    <li className="text-sm font-light">
+                    <li className="text-xs font-light sm:text-sm">
                         <div className="navlink">
                             <Link to="/working-with-petal" data-content="Working with Petal" className="font-sans highlight">Working with Petal</Link>
                         </div>
