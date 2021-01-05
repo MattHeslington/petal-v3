@@ -55,7 +55,7 @@ const IndexPage = () => {
             <About/>
 
             <div className="mt-64 sm:my-24">
-                <h2 className="font-sans text-4xl font-black leading-tight tracking-tight text-center text-white xl:text-6xl"><span className="gradienta">We make websites</span> that:</h2>
+                <h2 className="font-sans text-4xl font-black leading-tight tracking-tight text-center text-white sm:text-5xl xl:text-6xl"><span className="gradienta">We make websites</span> that:</h2>
             </div>
 
             <div className="z-10 flex flex-col items-center p-12 rounded-lg md:flex-row">

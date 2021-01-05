@@ -1,6 +1,6 @@
 import React from 'react'
 import {Helmet} from "react-helmet";
-import Responsive from 'src/components/Responsive'
+//import Responsive from 'src/components/Responsive'
 import Nav from 'src/components/Nav'
 
 import Snowflakes from 'src/components/Snowflakes'
@@ -13,8 +13,8 @@ const Layout = ({children}) => {
                     lang: 'en',
                 }}
             />
-            <Responsive/>
-            <div className="container flex flex-col min-h-screen mx-auto">
+
+            <div className="container flex flex-col min-h-screen px-2 mx-auto sm:px-0">
                 <Nav/>
                 {children}
             </div>
