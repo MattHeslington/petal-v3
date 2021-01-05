@@ -13,7 +13,14 @@ module.exports = {
         {
         resolve: "gatsby-plugin-manifest",
         options: {
-            icon: "src/images/icon.png",
+            name: `Petal Web Development`,
+            short_name: `Petal`,
+            description: `Petal is a small boutique design studio dedicated to achieving outstanding results using the latest web technologies.`,
+            lang: `en`,
+            start_url: `/`,
+            background_color: `#0F131B`,
+            theme_color: `#0F131B`,
+            display: `standalone`,
         },
         },
         "gatsby-plugin-mdx",

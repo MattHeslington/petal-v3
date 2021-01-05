@@ -21,7 +21,7 @@ const Nav = () => {
                         </div>
 
                         <div className="absolute w-40 mt-2 mr-12">
-                            <img className="w-40 h-20" src={text} alt="see how fast our site is"/>
+                            <img src={text} alt="see how fast our site is" style={{width:"160px",height:"78px"}}/>
                         </div>
                     </li>
 
