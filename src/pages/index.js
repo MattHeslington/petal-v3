@@ -39,7 +39,7 @@ const IndexPage = () => {
                 <div className="flex flex-col items-center justify-around w-full mt-8 mb-16 space-x-2 space-y-8 sm:flex sm:flex-row xl:mt-0 lg:mt-12 md:mt-16 sm:mt-20 sm:space-y-0">
                     <motion.div initial={defaultAward} animate={{scale: 1, opacity:1}} transition={{ delay:0.7, duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] }} className="flex flex-col items-center w-48 space-y-5">
                         <img className="w-8 lg:w-20 md:w-16 sm:w-12" src={tech} alt="technology"/>
-                        <p className="font-sans text-xs font-light text-center">All our sites are bespoke & custom-made to our clients exact requirements</p>
+                        <p className="font-sans text-xs font-light text-center">All our sites are bespoke & custom-made to our client's exact requirements</p>
                     </motion.div>
                     <motion.div initial={defaultAward} animate={{scale: 1, opacity:1}} transition={{ delay:0.9, duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] }} className="flex flex-col items-center w-48 space-y-5">
                         <img className="w-8 lg:w-20 md:w-16 sm:w-12" src={custom} alt="custom made"/>
