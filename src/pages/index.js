@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import {Helmet} from "react-helmet";
 import Layout from 'src/components/Layout'
 import About from 'src/components/About'
+import Examples from 'src/components/Examples'
 import FooterCTA from 'src/components/FooterCTA'
 
 import tech from 'src/static/tech.png'
@@ -33,7 +34,7 @@ const IndexPage = () => {
                         <br/>
                         web development
                         <br/>
-                        <span className="gradienta">that converts</span>
+                        <span className="gradienta">you'll adore</span>
                     </h2>
                 </motion.div>
                 <div className="flex flex-col items-center justify-around w-full mt-8 mb-16 space-x-2 space-y-8 sm:flex sm:flex-row xl:mt-0 lg:mt-12 md:mt-16 sm:mt-20 sm:space-y-0">
@@ -51,6 +52,8 @@ const IndexPage = () => {
                     </motion.div>
                 </div>
             </div>
+
+            <Examples/>
 
             <About/>
 

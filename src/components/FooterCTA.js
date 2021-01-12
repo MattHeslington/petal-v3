@@ -18,6 +18,9 @@ const FooterCTA = () => {
                 new website?
             </h2>
             <Link to="/schedule"><button className="px-5 py-3 font-sans text-4xl font-bold tracking-tight text-white border border-white rounded-full bg-ourBlue">Contact us</button></Link>
+            <div className="absolute bottom-0 left-0 h-16 ml-4 font-bold font-white font-base">
+                made with love by petal. <a href="https://petal-lac.vercel.app/"  target="_blank" rel="noreferrer">view v1 of our site here.</a>
+            </div>
         </div>
 
     )
